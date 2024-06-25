@@ -1,0 +1,6 @@
+train: E:\marine\train
+val: E:\marine\val
+
+nc: 11
+
+names: ['Wall', 'Valve', 'Bottle', 'Hook', 'Propeller', 'Shampoo-bottle', 'Chain', 'Standing-bottle', 'Can', 'Drink-carton', 'Tire']
