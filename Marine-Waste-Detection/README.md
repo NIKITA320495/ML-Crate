@@ -23,3 +23,13 @@ Our project architecture encompasses the development of a comprehensive website 
 
 ## Interface 
 ![interface](https://github.com/NIKITA320495/ML-Crate/blob/main/Marine-Waste-Detection/Images/interface.png)
+## Machine Learning Model
+
+In our marine object detection model, we conducted a thorough class analysis of the marine_debris_fls dataset, identifying 11 unique classes such as wall, can, tire, and bottle. We split the dataset into training (80%) and validation (20%) sets, creating a data_custom.yaml configuration file for the YOLO framework. Utilizing the yolo8n.pt pretrained model, we fine-tuned it on our custom dataset, resulting in the trained model best.pt. We developed predict.py to perform inference on images and videos, accurately identifying and localizing marine debris. This comprehensive pipeline effectively addresses marine debris detection in aquatic environments.
+
+###Lables
+![labels](https://github.com/NIKITA320495/ML-Crate/blob/main/Marine-Waste-Detection/Images/labels.jpg)
+### Working 
+![](https://github.com/NIKITA320495/ML-Crate/blob/main/Marine-Waste-Detection/Images/val_batch2_pred.jpg)
+### Results
+![](https://github.com/NIKITA320495/ML-Crate/blob/main/Marine-Waste-Detection/Images/working.png)
