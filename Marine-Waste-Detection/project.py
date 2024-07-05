@@ -13,7 +13,7 @@ def load_model():
     # Load your YOLO model here
     model = YOLO("best.pt", "yolov8")  # Update the path and model name accordingly
     return model
-
+ 
 # Perform inference on the input image
 def inference(model, image):
     # Perform inference using the YOLO model
@@ -56,4 +56,4 @@ def predict():
         return Response(result_image_bytes, mimetype='image/jpeg')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
